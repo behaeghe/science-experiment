@@ -1,0 +1,9 @@
+{
+    "path" : "~/science-experiment/data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

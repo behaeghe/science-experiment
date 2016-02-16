@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle       : Notes on R Programming\nsubtitle    : \nauthor      : JR Behaeghel\njob         : \nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Read-And-Delete\n\n1. Edit YAML front matter\n2. Write using R Markdown\n3. Use an empty line followed by three dashes to separate slides!\n\n--- .class #id \n\n## Slide 2\n\n\n\n\n",
+    "created" : 1455279548147.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2539467175",
+    "id" : "E3ABCFCD",
+    "lastKnownWriteTime" : 1455282374,
+    "path" : "~/science-experiment/DataScicencesNote/index.md",
+    "project_path" : "DataScicencesNote/index.md",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "type" : "markdown"
+}
