@@ -1,12 +1,12 @@
 {
-    "contents" : "above10 <- function (x){\n  use <- x>10\n  x[use]\n}\n\nabove_n <- function (x,n=10) {\n  use <- x>n\n  x[use]\n}\n\ncolumnmean <- function (x,removeNA=TRUE) {\n  nc <- ncol(x)\n  means = numeric(nc)\n  for (i in 1:nc) {\n    means[i] <- mean(x[,i],na.rm=removeNA)\n  }\n  \n  means\n}",
+    "contents" : "above10 <- function (x){\n  use <- x>10\n  x[use]\n}\n\nabove_n <- function (x,n=10) {\n  use <- x>n\n  x[use]\n}\n\ncolumnmean <- function (x,removeNA=TRUE) {\n  nc <- ncol(x)\n  means = numeric(nc)\n  for (i in 1:nc) {\n    means[i] <- mean(x[,i],na.rm=removeNA)\n  }\n  \n  means\n}\n\nmake.power <- function(n){\n  pow <- function(x){\n    x^n    \n  }\n  pow\n}\nf <- function(x){\n  y<-2\n  y^2+ g(x)\n}\ng <- function (x) {\n  x*y\n}\n",
     "created" : 1455659655641.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "0|24|3|0|\n",
-    "hash" : "1657296518",
+    "hash" : "1224410697",
     "id" : "3B3D52DF",
-    "lastKnownWriteTime" : 1455661389,
+    "lastKnownWriteTime" : 1455766137,
     "path" : "~/science-experiment/FunctionLecture.R",
     "project_path" : "FunctionLecture.R",
     "properties" : {
