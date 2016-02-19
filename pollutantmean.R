@@ -20,14 +20,16 @@ pollutantmean <- function (directory, pollutant,id=1:332) {
         
 
         ## initializing an empty data frame, subsequent loaded observations will be appended to this data frame
-        pollutantdata = data.frame("Date"=character(0),"sulfate"=character(0),"nitrate"=character(0), "ID"=integer(0))         
+        pollutantdata = data.frame("Date"=character(0),"sulfate"=character(0),"nitrate"=character(0), "ID"=integer(0)) 
+        ## get the list of files (as a vector) to read from 
+        fileList <- dir(path=directory)
+        ## looping through sequence of files
         for (i in 1:length(id)){
-                fileIndex <- id[i]
-                fileToload <- file.path("specdata",dir(path="specdata")[[fileIndex]])
-                print(fileToload)
-                thisMon <- read.csv(fileToload) #load file content in dataframe
-                 pollutantdata = rbind(pollutantdata,thisMon)
+                fileIndex <- id[i] #define the value of the file to retrieve data for current loop iteration
+                fileToload <- file.path(directory,fileList[[fileIndex]]) #create a path to the file
+                thisMon <- read.csv(fileToload) #load csv file content in dataframe
+                 pollutantdata = rbind(pollutantdata,thisMon) #append observation to pollutantdata data frame
          }
 
-        mean(pollutantdata[[pollutant]],na.rm=TRUE)
+        mean(pollutantdata[[pollutant]],na.rm=TRUE) # compute mean across all loaded observations ignoring NA
 }
